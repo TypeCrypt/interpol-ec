@@ -1,6 +1,8 @@
 use num_bigint::BigUint;
 use num_traits::{Zero, One};
 
+mod curve_parameters;
+
 /* Generic finite field trait. Arithemetic operations
    over finite fields are implemented. Each type for
    which field is implemented is a field element type,
@@ -83,3 +85,6 @@ pub fn invert(num: BigUint, modulo: BigUint) -> BigUint {
     return x % &modulo;
 }
 
+struct PF {
+
+}
