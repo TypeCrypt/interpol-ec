@@ -85,6 +85,11 @@ pub fn invert(num: BigUint, modulo: BigUint) -> BigUint {
     return x % &modulo;
 }
 
-struct PF {
+pub struct PF {
+    pub ORDER: BigUint,
+    pub value: BigUint    
+}
 
+impl Field for PF {
+    
 }
